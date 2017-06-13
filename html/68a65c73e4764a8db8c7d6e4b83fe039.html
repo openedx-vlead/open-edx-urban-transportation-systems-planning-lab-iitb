@@ -1,0 +1,123 @@
+<p><b>Regression Models</b></p>
+<hr />
+<p><b>Single Linear Regression Model (SLRM)</b> <b><span style="font-size: 12pt; line-height: 150%; font-family: 'Verdana','sans-serif'; color: black;"> </span></b></p>
+<center>
+<table>
+<tbody>
+<tr><th>Y Values</th><th>X Values</th></tr>
+<tr>
+<td>0.3415</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>0.50705</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td>0.648</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>0.5554</td>
+<td>1.32</td>
+</tr>
+<tr>
+<td>0.514</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>1.135</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0.9245</td>
+<td>2.1</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> </span></p>
+<center>y = a + bx</center>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/1.bmp" style="width: 600px; height: 400px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> For i<sup>th</sup> observation x<sub>i</sub> let y<sub>i</sub> be the observed value and the corresponding estimated value obtained from equation (1) be denoted as y<sub>e</sub>. The difference between them is called as error, deviation or residual. A best fit curve is obtained only when this error is minimum. Thus to remove the positive and negative signs, sum of squares of error is taken which is minimised and the corresponding value of a and b is found out. </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/1.png" style="width: 300px; height: 150px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> Partial derivative with respect a and b is set to zero and after rearranging the terms we get </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/2.png" style="width: 400px; height: 150px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> The above two equations are called as the characteristics equations. Applying Cramer's Rule we get </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/3.png" style="width: 350px; height: 280px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> That is point (x<sup>&lowast;</sup>,y<sup>&lowast;</sup>) satisfies the equation of best fitting line, this means that the best fitting straight line always passes through the means of the observation. <br /> </span></p>
+<center>a=y<sup>&lowast;</sup>&minus; bx<sup>&lowast;</sup></center>
+<p><br /> The proportion of total variation explained by line is the measure of goodness of fit of the regression line. This proportion is explained by goodness Coefficient of Determination <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/4.png" style="width: 380px; height: 150px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> Its value ranges from zero when none of the total variation is explained by the regression line to one when all the variation is explained by the regression line. The square root of coefficient of determination is called as coefficient of correlation. If r is near +1 it denotes positive correlation and if is near -1 it denotes negative correlation. Proper magnitude and formula for r is given below: </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/5.png" style="width: 450px; height: 150px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b>Correlation</b><br /> In order to measure the degree to which Y observations are spread around their average value Total Sum of Square (TSS) deviations from the mean is found with the help of formula given below: </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/6.png" style="width: 500px; height: 350px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> <b>Multiple Linear Regression Model (MLRM)</b><br /><br /> In order to measure the degree to which Y observations are spread around their average value Total Sum of Square (TSS) deviations from the mean is found with the help of formula given below:<br /><br /> </span></p>
+<center>Y=a<sub>0</sub> + a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + ... ... .a<sub>n</sub>x<sub>n</sub></center>
+<p><br /> Characteristics of MLRM are:</p>
+<ul>
+<li>There should be (n+1) observations where n is the number of independent variables used for the calibration of the above equation.</li>
+<li>The independent variables chosen must not be highly correlated among each other. A coefficient of correlation as mentioned earlier will help in finding out the relation between independent terms. Only those variables which are not highly related should be mentioned in the MLRM. In case when two variables are highly related then it would be difficult to capture the effect of one on the dependent variable because varying any one of the two X's will involve change of the other.</li>
+<li>The selected independent variables must be highly correlated to the dependent variable. The relation between coefficients of variable can be determined by obtaining correlation matrix.</li>
+</ul>
+<p><br /> The goodness to fit can be assessed by obtaining coefficient of multiple correlation and required statistical test results. <br /><br /> Non Linear Regression Model (NLRM)<br /> <br /> These models are calibrated by one of the two methods. First method consists of specifying the non linear model and proceeding through minimization of the sum of the squared deviations as in the LRM.<br /><br /> Example</p>
+<center>
+<table>
+<tbody>
+<tr><th>Y Values</th><th>X Values</th></tr>
+<tr>
+<td>0.3415</td>
+<td>0.7</td>
+</tr>
+<tr>
+<td>0.50705</td>
+<td>0.89</td>
+</tr>
+<tr>
+<td>0.648</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>0.5554</td>
+<td>1.32</td>
+</tr>
+<tr>
+<td>0.514</td>
+<td>1.2</td>
+</tr>
+<tr>
+<td>1.135</td>
+<td>3</td>
+</tr>
+<tr>
+<td>0.9245</td>
+<td>2.1</td>
+</tr>
+</tbody>
+</table>
+</center>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/2.bmp" style="width: 500px; height: 400px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 14pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> Considering <b> Linear Regression Model</b> (LRM) From the formulas of a and b given above we get a=0.78 and b=0.56 Considering <b>Non Linear Regression Model (NLRM)</b> </span></p>
+<center>y=ax<sup>b</sup></center>
+<p>Taking log both the side</p>
+<center>logy=loga+blogx</center>
+<p><br /> The above equation can be written as y<sup>&prime;</sup>=a<sup>&prime;</sup>+bx<sup>&prime;</sup> where<br /> From the formulas of a and b given above we get<br /> y<sup>&prime;</sup>=logy<br /> a<sup>&prime;</sup>=loga<br /> x<sup>&prime;</sup>=logx<br /> While in the second method the non linear form of equation is represented in a linear format and then calibration is done for the new linear equation obtained. Few examples of such non linear equation are given below <br /> <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/t1.png" style="width: 700px; height: 400px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> The solution for SLRM can be obtained from the procedure above. You can perform experiments not only on SLRM but also on MLRM and Non linear Models since it is tedious to work on them manually. <br /> The Non Linear Models are </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/8.png" style="width: 700px; height: 320px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> Regression Analysis will give a relation between the trip production (attraction) and its relevant independent variables. This relationship can be assumed to continue for futuristic scenario. Thus by obtaining future census data of variables we can get future Production Attraction table. <br /> To get an idea you can perform experiment by default file which is recent census data of Pune city. Example</span></p>
+<hr />
+<p><br /> Planners have estimated the following models for the AM Peak Hour<br /> T<sub>i</sub>=1.5&lowast;H<sub>i</sub><br /><br /> T<sub>j</sub>=(1.5&lowast;E<sub>off,j</sub>)+(1&lowast;E<sub>oth,j</sub>)+(0.5&lowast;E<sub>ret,j</sub>)<br /> where,<br /> Ti = Person trips originating in zone i.<br /> Tj = Person trips destined in zone i.<br /> Hi= Number of House holds in zone i<br /> You are also given the following data<br /> <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/9.png" style="width: 700px; height: 320px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> A. What are the number of person trips originating in and destined for each city? <br /> B. Normalize the number of person trips so that the number of person trip origins = the number of person trip destinations. <br /> Solution <br /> A. The number of person trips originating in and destined for each city: <br /> </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/10.png" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> B. Normalize the number of person trips so that the number of person trip origins = the number of person trip destinations. Assume the model for person trip origins is more accurate. Use: <br /> </span></p>
+<p><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/11.png" style="width: 500px; height: 200px; margin-left: 10%;" /> <br /> <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp2/img/12.png" style="width: 800px; height: 300px; margin-left: 10%;" /> </p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> References</span></p>
+<hr />
+<p><br /> Books</p>
+<ul>
+<ul>
+<li>J. De D. Ortuzar and L.G. Willumsen (1996), Modelling Transport. Wiley Publications, London.</li>
+<li>C. S. Papacostas and P. D. Prevedouros (2001), Transportation Engineering &amp; planning. Prentice-Hall of India, New Delhi.</li>
+</ul>
+</ul>
+<p class="MsoNormal">'font-size: 12pt; line-height: 150%; font-family: "Verdana","sans-serif"; color: black;'&gt;</p>

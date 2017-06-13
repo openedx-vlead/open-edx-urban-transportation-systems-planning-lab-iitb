@@ -1,0 +1,44 @@
+<p><b><span style="font-size: 12pt; line-height: 150%; font-family: 'Verdana','sans-serif'; color: black;">Introduction </span></b></p>
+<p></p>
+<p class="PreformattedText"><span style="font-size: 12pt; font-family: 'Verdana','sans-serif';" lang="EN-IN"> This model is a classic travel demand model which is originally developed from the Newton's Law of Gravitation. It is written in the form as shown below: <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp5/1.png" /><br /> The above formula states that the interchange volume between production zone i and an attracting zone j is directly proportional to the magnitude trips produced from zone i and attracted to zone j and inversely proportional to impedance W. The sum over all trip attracting zones j of the interchange volumes that share i as the trip producing zone must be equal to total trip productions of zone i i.e., <br /> <img style="width: 760px; height: 348px;" src="http://civil13-iitb.base1.vlabs.ac.in/exp5/2..png" /><br /> Finally introducing a set of interzonal socio economic adjustment factors Kij <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp5/3..png" /><br /> Ajk = Adjusted trip attraction for kth iteration.<br /> cj = desired trip attraction j.<br /> Aj(k&minus;1) = Adjusted trip attraction for iteraction (k-1).<br /> cj(k&minus;1) = calculated trip attraction for iteration (k-1) (obtained from gravity model calculation (6)) j Iteration is carried on till the<br /> satisfactory value of trip attraction is obtained.<br /><br /> </span></p>
+<p style="color: blue;">Singly constrained gravity model</p>
+<hr />
+<p><br /> Singly Constraint Gravity Model is a type when either the origin (production) or destination (Attraction) is constraint. Equation (5) is derived when Trip Production is constraint. In the equation (5) the proportionality constant k is chosen such that the sum over all the trip attracting zones j interchanging volume with the trip producing volume i is indicated as the total number of trips. <br /> Pi=&sum;jTij <br /> Similarly k can also be defined by stating that sum of all the trips exchanged by Trip Attracting zone j with all other Trip Producing zone i.<br /> The sum over all trip attracting zones j of the interchange volumes that share i as the trip producing zone must be equal to total trip productions of zone i i.e., K proportionality constant, equation 5 is modified with respect to Trip Production. Other constraint is adjusted with the help of iterative procedure. The model has one constraint thus it is called Singly Constraint Model.<br /> Tij=PiFijAj&sum;jFijAj <br /> </p>
+<p style="color: blue;">Example</p>
+<hr />
+<p><br /> The future Oi &amp; Dj and cost matrix is given below <br /> [Ofi]=[10158] <br /> [Dfj]=[71610] <br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp5/4..png" /><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp5/5.png" /><br /> <img src="http://civil13-iitb.base1.vlabs.ac.in/exp5/6..png" /></p>
+<table class="table table-bordered table-hover"><caption><span class="MathJax_Preview"></span><span role="textbox" id="MathJax-Element-58-Frame" class="MathJax"><nobr><span id="MathJax-Span-1051" class="math"><span style="display: inline-block; position: relative; width: 25px; height: 0px; font-size: 130%;"><span style="position: absolute; clip: rect(1.438em, 1000em, 2.698em, -0.412em); top: -2.26em; left: 0em;"><span id="MathJax-Span-1052" class="mrow"><span id="MathJax-Span-1053" class="msubsup"><span style="display: inline-block; position: relative; width: 1.205em; height: 0px;"><span style="position: absolute; clip: rect(1.631em, 1000em, 2.596em, -0.412em); top: -2.452em; left: 0em;"><span style="font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1054" class="mi">T<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.12em;"></span></span><span style="display: inline-block; width: 0px; height: 2.452em;"></span></span><span style="position: absolute; top: -2.158em; left: 0.601em;"><span id="MathJax-Span-1055" class="texatom"><span id="MathJax-Span-1056" class="mrow"><span style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1057" class="mi">i</span><span style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1058" class="mi">j</span></span></span><span style="display: inline-block; width: 0px; height: 2.308em;"></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.26em;"></span></span></span><span style="border-left: 0em solid; display: inline-block; overflow: hidden; width: 0px; height: 1.388em; vertical-align: -0.445em;"></span></span></nobr></span></caption>
+<tbody>
+<tr><th>zone</th><th>1</th><th>2</th><th>3</th><th><span class="MathJax_Preview"></span><span role="textbox" id="MathJax-Element-59-Frame" class="MathJax"><nobr><span id="MathJax-Span-1059" class="math"><span style="display: inline-block; position: relative; width: 75px; height: 0px; font-size: 130%;"><span style="position: absolute; clip: rect(1.846em, 1000em, 3.179em, -0.377em); top: -2.74em; left: 0em;"><span id="MathJax-Span-1060" class="mrow"><span id="MathJax-Span-1061" class="texatom"><span id="MathJax-Span-1062" class="mrow"><span style="font-family: MathJax_Size1; vertical-align: 0em;" id="MathJax-Span-1063" class="mo">&sum;</span><span style="padding-left: 0.167em;" id="MathJax-Span-1064" class="msubsup"><span style="display: inline-block; position: relative; width: 1.181em; height: 0px;"><span style="position: absolute; clip: rect(1.625em, 1000em, 2.596em, -0.4em); top: -2.452em; left: 0em;"><span style="font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1065" class="mi">D</span><span style="display: inline-block; width: 0px; height: 2.452em;"></span></span><span style="position: absolute; top: -2.158em; left: 0.817em;"><span style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1066" class="mi">j</span><span style="display: inline-block; width: 0px; height: 2.308em;"></span></span></span></span><span id="MathJax-Span-1067" class="msubsup"><span style="display: inline-block; position: relative; width: 1.219em; height: 0px;"><span style="position: absolute; clip: rect(1.628em, 1000em, 2.596em, -0.402em); top: -2.452em; left: 0em;"><span style="font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1068" class="mi">F<span style="display: inline-block; overflow: hidden; height: 1px; width: 0.106em;"></span></span><span style="display: inline-block; width: 0px; height: 2.452em;"></span></span><span style="position: absolute; top: -2.158em; left: 0.615em;"><span id="MathJax-Span-1069" class="texatom"><span id="MathJax-Span-1070" class="mrow"><span style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1071" class="mi">i</span><span style="font-size: 70.7%; font-family: MathJax_Math; font-style: italic;" id="MathJax-Span-1072" class="mi">j</span></span></span><span style="display: inline-block; width: 0px; height: 2.308em;"></span></span></span></span></span></span></span><span style="display: inline-block; width: 0px; height: 2.74em;"></span></span></span><span style="border-left: 0em solid; display: inline-block; overflow: hidden; width: 0px; height: 1.483em; vertical-align: -0.445em;"></span></span></nobr></span></th><th>Future year origin Total</th></tr>
+<tr>
+<td>1</td>
+<td>3.617</td>
+<td>4.8632</td>
+<td>1.5198</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>2</td>
+<td>2.561</td>
+<td>8.7805</td>
+<td>3.6585</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0.8116</td>
+<td>3.7101</td>
+<td>3.4783</td>
+<td>8</td>
+<td>8</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p style="color: blue;">References</p>
+<hr />
+<p></p>
+<p style="color: blue;">Books</p>
+<p>1.J. De D. Ortuzar and L.G. Willumsen (1996), Modelling Transport. Wiley Publications, London. <br /> 2.C. S. Papacostas and P. D. Prevedouros (2001), Transportation Engineering &amp; planning. Prentice-Hall of India, New Delhi.</p>
