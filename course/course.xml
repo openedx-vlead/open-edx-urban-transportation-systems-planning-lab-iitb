@@ -1,4 +1,4 @@
-<course cert_html_view_enabled="true" display_name="Urban Transportation Systems Planning Lab" language="en" start="&quot;2030-01-01T00:00:00+00:00&quot;">
+<course advertised_start="Anytime" cert_html_view_enabled="true" display_name="Urban Transportation Systems Planning Lab" instructor_info="{&quot;instructors&quot;: []}" language="en" learning_info="[]" start="&quot;2017-05-01T00:00:00+00:00&quot;">
   <chapter url_name="cfcf3e414417459d8a7ddef3e081a617"/>
   <chapter url_name="1cd33797903945a8af64d05f9b95b3d7"/>
   <chapter url_name="f5182a38978d4bfd87a0299e75be3f3f"/>
@@ -12,5 +12,6 @@
   <chapter url_name="8115b6a319df48b8a86d2f8826903f82"/>
   <chapter url_name="e58d6888fecb4d78b525a5bb311ba40f"/>
   <chapter url_name="009b574d3cd44d52a95fa8b6f699d53f"/>
+  <chapter url_name="8d4e5b69e8bb42208a69cb4221ce7f28"/>
   <wiki slug="IIT-Bombay.CIVIL13-IITB.Anytime"/>
 </course>
